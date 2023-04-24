@@ -24,17 +24,27 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
     }
     
 
     @IBAction func btnLoguear(_ sender: UIButton) {
+    
+        
         
         let usuario = inputUsuario.text
         let clave = inputClave.text
-        print("logueo",usuario!)
-        print("clave",clave!)
+        
+        if usuario == clave {
+            
+            
+        }else{
+            let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"),
+                                          style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            tabBarController?.present(alert, animated: true, completion: nil)
+        }
     }
-    
 }

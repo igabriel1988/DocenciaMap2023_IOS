@@ -96,6 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209E1B9629F5FAAB004FDCD8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				20A8CE9529F5E20D00E54498 /* MainViewController.swift */,
+				20A8CE9429F5E20D00E54498 /* SideMenuCell.swift */,
+				20A8CE9729F5E20E00E54498 /* SideMenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		209E1B9729F5FD0E004FDCD8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20A8CE9229F5E1F800E54498 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		209E1B9829F5FD1E004FDCD8 /* DocenciaMap */ = {
+			isa = PBXGroup;
+			children = (
+				20A8CE9E29F5E21800E54498 /* CustomCollectionViewCell.swift */,
+				20A8CE9D29F5E21800E54498 /* DisponiblesViewController.swift */,
+				20A8CE9B29F5E21700E54498 /* HomeViewController.swift */,
+				20A8CE9C29F5E21700E54498 /* PruebaViewController.swift */,
+			);
+			path = DocenciaMap;
+			sourceTree = "<group>";
+		};
 		20A8CE4129F5DCC100E54498 = {
 			isa = PBXGroup;
 			children = (
@@ -169,14 +198,9 @@
 		20A8CEAF29F5E4FF00E54498 /* Controlador */ = {
 			isa = PBXGroup;
 			children = (
-				20A8CE9229F5E1F800E54498 /* LoginViewController.swift */,
-				20A8CE9529F5E20D00E54498 /* MainViewController.swift */,
-				20A8CE9429F5E20D00E54498 /* SideMenuCell.swift */,
-				20A8CE9729F5E20E00E54498 /* SideMenuViewController.swift */,
-				20A8CE9E29F5E21800E54498 /* CustomCollectionViewCell.swift */,
-				20A8CE9D29F5E21800E54498 /* DisponiblesViewController.swift */,
-				20A8CE9B29F5E21700E54498 /* HomeViewController.swift */,
-				20A8CE9C29F5E21700E54498 /* PruebaViewController.swift */,
+				209E1B9729F5FD0E004FDCD8 /* Login */,
+				209E1B9629F5FAAB004FDCD8 /* Menu */,
+				209E1B9829F5FD1E004FDCD8 /* DocenciaMap */,
 			);
 			path = Controlador;
 			sourceTree = "<group>";

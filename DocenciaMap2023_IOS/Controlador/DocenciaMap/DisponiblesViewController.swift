@@ -1,12 +1,13 @@
 //
-//  PruebaViewController.swift
+//  DisponiblesViewController.swift
 //  AppDocencia23
 //
-//  Created by Ivan Gabriel on 08/04/23.
+//  Created by Ivan Gabriel on 21/04/23.
+//
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class DisponiblesViewController: UIViewController {
     
     
     //buscar1
@@ -14,95 +15,63 @@ class HomeViewController: UIViewController {
         var searchedCursos = [Curso]()
         let searchController = UISearchController(searchResultsController: nil)
     
+ 
     
-    @IBOutlet weak var collectionView: UICollectionView!
+      
+    ////
     
-  
     
     let collectionViewData : [Curso] = [
-        Curso(imagenEstado: "guadalajara.png",
-              nombreCurso: "DIMENSION DEL PERFIL DOCENTE",
-              nombreEstado: "CAMPECHE",
+        Curso(imagenEstado: "baja_california.png",
+              nombreCurso: "ACTIVIDADES EXTRACLASE",
+              nombreEstado: "BAJA CALIFORNIA",
               cursoModalidad: "HOME OFFICE",
               cursoDuracion: "20 HORAS",
               cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "guadalajara.png",
-              nombreCurso: "DIDÁCTICA DE ELEMENTOS DE EJECUCIÓN",
-              nombreEstado: "CELAYA",
+              cursoStatus: "DISPONIBLE"),
+        Curso(imagenEstado: "cdmx.png",
+              nombreCurso: "ADAPTACIÓN Y DISEÑO DE SITUACIONES",
+              nombreEstado: "CDMX",
+              cursoModalidad: "PRESENCIAL",
+              cursoDuracion: "19 HORAS",
+              cursoUrl: "WWW.GOOGLE.COM",
+              cursoStatus: "DISPONIBLE"),
+        Curso(imagenEstado: "queretaro.png",
+              nombreCurso: "PROCESO DE ADMINISIÓN LA DOCENCIA  EN EDUCACIÓN BÁSICA",
+              nombreEstado: "QUERETARO",
               cursoModalidad: "HOME OFFICE",
               cursoDuracion: "20 HORAS",
               cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "guanajuato.png",
-              nombreCurso: "EL ESTILO DE ESCRITURA APA PARA LA PUBLICACIÓN ACADÉMICA",
-              nombreEstado: "GUANAJUATO",
+              cursoStatus: "DISPONIBLE"),
+        Curso(imagenEstado: "sonota.png",
+              nombreCurso: "DOCENCIA PRINCIPIOS",
+              nombreEstado: "SONORA",
               cursoModalidad: "HOME OFFICE",
-              cursoDuracion: "120 HORAS",
+              cursoDuracion: "10 HORAS",
               cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "merida.png",
-              nombreCurso: "LA PEDAGOGÍA Y LOS PRINCIPIOS DE LA NUEVA ESCUELA MEXICANA.",
-              nombreEstado: "GUANAJUATO",
+              cursoStatus: "DISPONIBLE"),
+        Curso(imagenEstado: "yucatan.png",
+              nombreCurso: "PREPARACIÓN DE CLASES",
+              nombreEstado: "YUCATAN",
               cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
+              cursoDuracion: "20 HORAS",
               cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "nayarit.png",
-              nombreCurso: "METODOLOGÍAS ACTIVAS EN EL PROCESO DE ENSEÑANZA EN EDUCACIÓN BÁSICA",
-              nombreEstado: "NAYARIT",
-              cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
-              cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "oaxaca.png",
-              nombreCurso: "TEORÍAS DEL APRENDIZAJE Y EDUCABILIDAD",
-              nombreEstado: "OAXACA",
-              cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
-              cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "tamaulipas.png",
-              nombreCurso: "CLUB DE LECTURA",
-              nombreEstado: "TAMAULIPAS",
-              cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
-              cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "tuxtla.png",
-              nombreCurso: "LENGUA DE SEÑAS MEXICANAS NIVEL AVANZADO",
-              nombreEstado: "TUXTLA",
-              cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
-              cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE"),
-        Curso(imagenEstado: "veracruz.png",
-              nombreCurso: "TALLER DE ARTES PLÁSTICAS",
-              nombreEstado: "VERACRUZ",
-              cursoModalidad: "PRESENCIAL",
-              cursoDuracion: "120 HORAS",
-              cursoUrl: "WWW.GOOGLE.COM",
-              cursoStatus: "PENDIENTE")
+              cursoStatus: "DISPONIBLE")
     ] //Cierra arreglo
     
-
-
+   
+    @IBOutlet weak var collectionView: UICollectionView!
     
     
-    
-    
-    
-    
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    override func viewDidLoad() {
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!;   override func viewDidLoad() {
         super.viewDidLoad()
-
         sideMenuBtn.target = revealViewController()
-                sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)        // Do any additional setup after loading the view.
         
         collectionView.dataSource = self
         collectionView.collectionViewLayout = createFlowLayout()
         configureSearchController()
+        
     }
     
     //buscar2
@@ -117,7 +86,7 @@ class HomeViewController: UIViewController {
         self.navigationItem.searchController = searchController
         definesPresentationContext = true
         searchController.searchBar.placeholder = "CURSO|ESTADO|MODALIDAD|INSTITUCIÒN"
-        
+        searchController.searchBar.backgroundColor = .white
         
     }
     
@@ -139,7 +108,7 @@ class HomeViewController: UIViewController {
     }
 
 }
-extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource,UISearchResultsUpdating,UISearchBarDelegate {
+extension DisponiblesViewController: UICollectionViewDelegate,UICollectionViewDataSource,UISearchResultsUpdating,UISearchBarDelegate {
     
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       if searching{
