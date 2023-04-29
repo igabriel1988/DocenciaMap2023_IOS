@@ -93,18 +93,19 @@ extension MainViewController: SideMenuViewControllerDelegate {
     func selectedCell(_ row: Int) {
         switch row {
         case 0:
-            // Home
+            ////Pagina inicial y listado de cursos para seleccionar
             self.showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
         case 1:
-            // Prueba
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "PruebaId")
-        
+            ////Notificaciones
+            self.showViewController(viewController: UIViewController.self, storyboardId: "NotificacionesId")
         case 2:
-            
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "DisponiblesId")
-        
+            ////Mis datos, pantalla para que el usuario valide su informaciòn
+            self.showViewController(viewController: UIViewController.self, storyboardId: "MisDatosId")
+        case 3:
+            ////Salir de la aplicaciòn
+            self.showViewController(viewController: LoginViewController.self, storyboardId: "LoginId")
         default:
-            break
+        break
             
             
         }

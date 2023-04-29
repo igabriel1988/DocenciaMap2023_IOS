@@ -43,7 +43,7 @@ class SideMenuViewController: UIViewController {
         // Footer
         self.footerLabel.textColor = UIColor.white
         self.footerLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        self.footerLabel.text = "Version 1.1"
+        self.footerLabel.text = "Version 1"
         
         // Register TableView Cell
         self.sideMenuTableView.register(SideMenuCell.nib, forCellReuseIdentifier: SideMenuCell.identifier)

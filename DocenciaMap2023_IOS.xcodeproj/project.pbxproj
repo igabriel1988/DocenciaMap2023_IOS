@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2082732229FDA48D00346943 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082732129FDA48D00346943 /* NotificacionesViewController.swift */; };
+		2082732429FDA92500346943 /* MisDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082732329FDA92500346943 /* MisDatosViewController.swift */; };
 		209E1B9229F5E5B0004FDCD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209E1B9129F5E5B0004FDCD8 /* Main.storyboard */; };
 		209E1B9529F5E6A4004FDCD8 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209E1B9429F5E6A4004FDCD8 /* SideMenuCell.xib */; };
 		20A8CE4E29F5DCC100E54498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A8CE4D29F5DCC100E54498 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2082732129FDA48D00346943 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
+		2082732329FDA92500346943 /* MisDatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosViewController.swift; sourceTree = "<group>"; };
 		209E1B9129F5E5B0004FDCD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../AppDocencia23/AppDocencia23/Vista/Main.storyboard; sourceTree = "<group>"; };
 		209E1B9429F5E6A4004FDCD8 /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		20A8CE4A29F5DCC100E54498 /* DocenciaMap2023_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocenciaMap2023_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,8 @@
 				20A8CE9D29F5E21800E54498 /* DisponiblesViewController.swift */,
 				20A8CE9B29F5E21700E54498 /* HomeViewController.swift */,
 				20A8CE9C29F5E21700E54498 /* PruebaViewController.swift */,
+				2082732129FDA48D00346943 /* NotificacionesViewController.swift */,
+				2082732329FDA92500346943 /* MisDatosViewController.swift */,
 			);
 			path = DocenciaMap;
 			sourceTree = "<group>";
@@ -343,10 +349,12 @@
 				20A8CE9F29F5E21800E54498 /* PruebaViewController.swift in Sources */,
 				20A8CE9329F5E1F800E54498 /* LoginViewController.swift in Sources */,
 				20A8CE4E29F5DCC100E54498 /* AppDelegate.swift in Sources */,
+				2082732429FDA92500346943 /* MisDatosViewController.swift in Sources */,
 				20A8CEA229F5E21800E54498 /* HomeViewController.swift in Sources */,
 				20A8CE5029F5DCC100E54498 /* SceneDelegate.swift in Sources */,
 				20A8CEA729F5E26F00E54498 /* Curso.swift in Sources */,
 				20A8CEA029F5E21800E54498 /* DisponiblesViewController.swift in Sources */,
+				2082732229FDA48D00346943 /* NotificacionesViewController.swift in Sources */,
 				20A8CE9929F5E20E00E54498 /* MainViewController.swift in Sources */,
 				20A8CE9A29F5E20E00E54498 /* SideMenuCell.swift in Sources */,
 			);

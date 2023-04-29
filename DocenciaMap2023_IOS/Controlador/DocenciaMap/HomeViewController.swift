@@ -120,8 +120,8 @@ class HomeViewController: UIViewController {
     }
     
     private func createFlowLayout() -> UICollectionViewCompositionalLayout {
-      let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(380),
-                                           heightDimension: .absolute(190))
+      let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(410),
+                                           heightDimension: .absolute(225))
       let item = NSCollectionLayoutItem(layoutSize: itemSize)
       item.contentInsets = NSDirectionalEdgeInsets(top: 10.0, leading: 10.0, bottom: 10.0, trailing: 10.0)
 
